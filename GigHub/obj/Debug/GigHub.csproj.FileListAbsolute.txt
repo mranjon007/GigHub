@@ -98,3 +98,4 @@ C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.InitialMo
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.csproj.GenerateResource.Cache
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.CreateGigTable.resources
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.OverrideConventionForGigAndGenre.resources
+C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.PopulatedGenresTable.resources
