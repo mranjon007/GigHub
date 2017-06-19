@@ -13,6 +13,7 @@ using GigHub.Models;
 namespace GigHub.Controllers
 {
     [Authorize]
+
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
