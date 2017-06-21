@@ -211,6 +211,14 @@
     <Compile Include="Migrations\201706192348335_PopulatedGenresTable.Designer.cs">
       <DependentUpon>201706192348335_PopulatedGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706200849223_AddArtistAndGenreForeignKeyInGigModel.cs" />
+    <Compile Include="Migrations\201706200849223_AddArtistAndGenreForeignKeyInGigModel.Designer.cs">
+      <DependentUpon>201706200849223_AddArtistAndGenreForeignKeyInGigModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706200854183_ChangeDataTypeOfArtistId.cs" />
+    <Compile Include="Migrations\201706200854183_ChangeDataTypeOfArtistId.Designer.cs">
+      <DependentUpon>201706200854183_ChangeDataTypeOfArtistId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -311,6 +319,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706192348335_PopulatedGenresTable.resx">
       <DependentUpon>201706192348335_PopulatedGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706200849223_AddArtistAndGenreForeignKeyInGigModel.resx">
+      <DependentUpon>201706200849223_AddArtistAndGenreForeignKeyInGigModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706200854183_ChangeDataTypeOfArtistId.resx">
+      <DependentUpon>201706200854183_ChangeDataTypeOfArtistId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
