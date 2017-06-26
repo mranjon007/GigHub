@@ -101,3 +101,4 @@ C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.Populated
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddArtistAndGenreForeignKeyInGigModel.resources
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.ChangeDataTypeOfArtistId.resources
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNameToApplicationUser.resources
