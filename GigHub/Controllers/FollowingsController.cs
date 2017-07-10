@@ -24,7 +24,6 @@ namespace GigHub.Controllers
             {
                 return BadRequest("Following Already Exist");
             }
-
             var following = new Following
             {
                 FolloweeId = userId,
