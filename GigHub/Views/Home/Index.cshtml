@@ -1,11 +1,11 @@
-﻿@model IEnumerable<GigHub.Models.Gig>
+﻿@model GigHub.ViewModels.GigsViewModel
 
 @{
     ViewBag.Title = "Home Page";
 }
 
 <ul class="gigs">
-    @foreach (var gig in Model)
+    @foreach (var gig in Model.UpComingGigs)
     {
         <li>
             <div class="date">
@@ -19,12 +19,19 @@
             
             <div class="details">
                 <span class="artist">
-                    @gig.Artist.Name
+                    @gig.Artist.Name 
+                    @if (Model.ShowActions)
+                    {
+                        <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId"> Following? </button>
+                    }
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
                 </span>
-                <button data-gig-id ="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-button">Going?</button>
+                @if (Model.ShowActions)
+                {
+                    <button data-gig-id ="@gig.Id" class="btn btn-default btn-sm pull-right js-toggle-button">Going?</button>                    
+                }
                 
             </div>
         </li>    
@@ -37,17 +44,30 @@
 @section scripts{
     <script>
         $(document).ready(function() {
-            $(".js-toggle-button").click(function(e) {
-                    var button = $(e.target);
-                    $.post("/api/attendances/Attend", {gigId: button.attr("data-gig-id") })
-                
-                .done(function() {
-                    button.removeClass("btn-default").addClass("btn-info").text("Going");
-                })
-                .fail(function() {
-                    alert("something failed");
-                });
+
+            $(".js-toggle-button").click(function (e) {
+                var button = $(e.target);
+                $.post("/api/attendances/Attend", { gigId: button.attr("data-gig-id") })
+                    .done(function() {
+                        button.removeClass("btn-default").addClass("btn-info").text("Going");
+                    })
+                    .fail(function() {
+                        alert("something failed");
+                    });
+            });
+
+            $(".js-toggle-follow").click(function(e) {
+                var button = $(e.target);
+                $.post("/api/followings/Follow", { FolloweeId: button.attr("data-user-id") })
+                    .done(function() {
+                        button.text("Following");
+                    })
+                    .fail(function() {
+                        alert("Something failed");
+                    });
+            });
+
+
         });
-    });
     </script>    
 }
