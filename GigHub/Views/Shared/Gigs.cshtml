@@ -4,9 +4,10 @@
     ViewBag.Title = "Home Page";
 }
 
-<h1>@Model.Heading</h1>
 
-<ul class="gigs">
+<h1 >@Model.Heading</h1>
+
+<ul class="gigs voffset5">
     @foreach (var gig in Model.UpComingGigs)
     {
         <li>

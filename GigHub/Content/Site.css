@@ -28,6 +28,14 @@ span.field-validation-error {
     font-weight: bold;
 }
 
+/*for vertical margin*/
+.voffset1{margin-top: 2px}
+.voffset2{margin-top: 5px}
+.voffset3{margin-top: 10px}
+.voffset4{margin-top: 20px}
+.voffset5{margin-top: 40px}
+
+
 
 /* override bootstrap */
 
@@ -142,7 +150,7 @@ h6,
     .gigs > li .date .day {
         background: #f7f7f7;
         color: #333;
-        font-size: 20 px;
+        font-size: 20px;
         padding: 6px 12px;
     }
 
