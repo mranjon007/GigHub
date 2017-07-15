@@ -110,3 +110,4 @@ C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\bin\System.Net.Http.Formatting.xml
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\bin\System.Web.Http.xml
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\bin\System.Web.Http.WebHost.xml
 C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddFollowing.resources
+C:\Users\DELL\Desktop\GitHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddIsCanceledToGig.resources
